@@ -36,8 +36,8 @@ int main(){
     
 //     logic for rearranging the array as per questions requirement
     
-    for(int i = 0; i<n-1; i+=2){
-        swap(arr[i+1],arr[i+2]);
+    for(int i = 1; i<n-1; i+=2){
+        swap(arr[i],arr[i+1]);
     }
     
     output(arr,n);
