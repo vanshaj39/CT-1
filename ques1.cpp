@@ -6,11 +6,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// function for input of array
+
 void input(int arr[], int n){
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
 }
+
+// function for printing the array
 
 void output(int arr[], int n){
     for(int i = 0; i<n; i++){
@@ -20,6 +24,7 @@ void output(int arr[], int n){
 
 
 int main(){
+//     variable for array length
     int n;
     cin>>n;
     
@@ -28,6 +33,8 @@ int main(){
     input(arr,n);
     
     sort(arr,arr+n);
+    
+//     logic for rearranging the array as per questions requirement
     
     for(int i = 0; i<n-1; i+=2){
         swap(arr[i+1],arr[i+2]);
